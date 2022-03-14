@@ -16,4 +16,5 @@ int main()
 		PrintBoard(mass);
 		MoveNumber += 1;
 	}
+	return 0;
 }
