@@ -633,4 +633,3 @@ void BlackTurn(char mass[9][9])
         }
     }
 }
-
