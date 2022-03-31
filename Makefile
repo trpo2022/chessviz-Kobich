@@ -1,8 +1,10 @@
+CC = gcc
+
 APP_NAME = main
 LIB_NAME = libchessviz
 TEST_NAME = chessviz-test
 
-CFLAGS = -Wall #-Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 CPPFLAGS = -I src -MP -MMD
 CPPFLAGST = -I thirdparty -MP -MMD
 LDFLAGS =
