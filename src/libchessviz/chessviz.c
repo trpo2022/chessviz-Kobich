@@ -82,9 +82,10 @@ int BlackPawnMove(int* step_integer, char mass[9][9])
                 = mass[step_integer[1]][step_integer[0]];
         mass[step_integer[1]][step_integer[0]] = ' ';
         return 0;
-    } else 
+    } else
         return 1;
 }
+
 int WhitePawnMove(int* step_integer, char mass[9][9])
 {
     if ((step_integer[1] == 6) && (step_integer[4] == step_integer[1] - 2)
@@ -371,7 +372,6 @@ void BlackQueenMove(int* step_integer, char mass[9][9])
     BlackRookMove(step_integer, mass);
 }
 
-
 int WhiteHorseMove(int* step_integer, char mass[9][9])
 {
     if (((mass[step_integer[4]][step_integer[3]] > 'a')
@@ -507,10 +507,10 @@ int BlackHorseMove(int* step_integer, char mass[9][9])
 int InputValidation(char* step)
 {
     while ((step[0] < 'a') || (step[0] > 'h') || (step[2] != '-')
-               || (step[4] == '0')) {
-            printf("this move doesn't work, make another move\n");
-            scanf("%s", step);
-        }
+           || (step[4] == '0')) {
+        printf("this move doesn't work, make another move\n");
+        scanf("%s", step);
+    }
     return 0;
 }
 

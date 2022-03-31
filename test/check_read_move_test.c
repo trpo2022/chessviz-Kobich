@@ -60,5 +60,3 @@ CTEST(Input, InputValidation)
 {
     ASSERT_EQUAL(0, InputValidation("e2-e4"));
 }
-
-
