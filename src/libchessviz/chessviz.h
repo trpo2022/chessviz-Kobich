@@ -14,5 +14,6 @@ void WhiteQueenMove(int* step_integer, char mass[9][9]);
 void BlackQueenMove(int* step_integer, char mass[9][9]);
 int WhiteHorseMove(int* step_integer, char mass[9][9]);
 int BlackHorseMove(int* step_integer, char mass[9][9]);
+int InputValidation(char* step);
 void WhiteTurn(char mass[9][9]);
 void BlackTurn(char mass[9][9]);
